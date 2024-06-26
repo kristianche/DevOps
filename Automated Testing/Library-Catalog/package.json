@@ -6,7 +6,9 @@
     "scripts": {
         "test": "mocha tests",
         "start-fe": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
-        "start-be": "cd server && node server.js"
+        "start-be": "cd server && node server.js",
+        "test-ui": "npx playwright test",
+        "test-ui-debug": "npx playwright test --ui"
     },
     "author": "",
     "license": "ISC",
